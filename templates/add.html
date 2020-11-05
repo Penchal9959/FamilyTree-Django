@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add person</title>
+</head>
+<body id="bg" style="display: inline-block; /*size:1040px;height:960px;*/ background-image: url('{% static 'images/familyback.jpg' %}'); no-repeat; background-size: cover">
+
+
+    <!-- <body ></body> -->
+    <!-- <video autoplay muted loop id="myVideo">
+          <source src="{% static 'images/video-bg.mp4' %}" type="video/mp4">
+    <  </video> -->
+    <!-- <img src="{% static 'images/familyback.jpg' %}"> -->
+    <div style="margin-left: 450px; color: green;">
+    <h1>Hey Add your Family members Here!</h1></div>
+    <div style="margin-left: 560px;"><form action="" method="POST">{% csrf_token %}
+
+        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <!-- <label class="label">Username</label> -->
+                                    <!-- <input class="input--style-4" type="username" name="username"> -->
+                                
+    	First Name : <input type="text" name="firstname" id="firstname"  placeholder="firstname"required><br><br>
+        </div>
+
+    	Surname    : <input type="text" name="Surname" id="Surname" placeholder="Surname" required><br><br>
+    	<!-- Email    : <input type="text" name="Email" id="Email" placeholder="abc@gmail.com" required><br><br> -->
+    	Gender : <input type="radio" name="gender" value="male">male
+    			 <input type="radio" name="gender" value="female">female<br><br>
+    	DOB    : <input type="text" id="birthdate" name="birthdate" placeholder="DD/MM/YYYY"><br><br>
+    	RelationShip: <select name="relation">
+          			<option value="Father">Father</option>
+          			<option value="Mother">Mother</option>
+          			<option value="brother">brother</option>
+        </select><br><br>
+        <button type="submit" value="Save" data-toggle="modal" style="
+    margin-left: 70px;
+    margin-right: 0px;
+    margin-top: 30px;
+    width: 150px;background-color: #4CAF50; color: white; cursor: pointer;  padding: 10px 30px; font-size: 20px; border: none;border-radius: 15px;">submit</button>
+        <!-- <div class="text-center"> -->
+	<!-- Button HTML (to Trigger Modal) -->
+	<!-- <a href="#myModal" data-toggle="modal">submit</a> -->
+<!-- </div> -->
+    </form>
+    </div>
+</body>
+</html>
