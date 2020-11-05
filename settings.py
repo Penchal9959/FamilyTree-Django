@@ -25,7 +25,7 @@ SECRET_KEY = 'z9uzf#0yc(=y8824$7gtzp2)s6yga-tzg=+!^bmgt66fl1t44z'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['2kbus1ltz5.execute-api.ap-south-1.amazonaws.com','127.0.0.1']
+ALLOWED_HOSTS = ['xxxxxxxxxxxxxxxxxxxxx.amazonaws.com','127.0.0.1']
 
 
 # Application definition
@@ -84,9 +84,9 @@ DATABASES = {
 
 #S3 BUCKET CONFIG
 
-# AWS_ACCESS_KEY_ID = 'AKIA3XKRXXQHHHLVT2XV'
-# AWS_SECRET_ACCESS_KEY = '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'
-# AWS_STORAGE_BUCKET_NAME = 'zappa-nb517gz2u'
+# AWS_ACCESS_KEY_ID = 
+# AWS_SECRET_ACCESS_KEY = 
+# AWS_STORAGE_BUCKET_NAME = 
 
 # AWS_S3_FILE_OVERWRITE = False
 # AWS_DEFAULT_ACL = None
