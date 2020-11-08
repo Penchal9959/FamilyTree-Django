@@ -82,60 +82,6 @@ DATABASES = {
     }
 }
 
-#S3 BUCKET CONFIG
-
-# AWS_ACCESS_KEY_ID = 
-# AWS_SECRET_ACCESS_KEY = 
-# AWS_STORAGE_BUCKET_NAME = 
-
-# AWS_S3_FILE_OVERWRITE = False
-# AWS_DEFAULT_ACL = None
-# DEFAULT_FILE_STORAGE = 'tree.storage.mystorage'
-
-# AWS_LOCATION = 'static/'
-# STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR, 'static'),
-# ]
-# STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-# STATIC_URL = 'https://%s%s/' % (AWS_S3_CUSTOM_DOMAIN, AWS_LOCATION)
-
-# MEDIA_URL = '/st/'
-# MEDIA_ROOT = os.path.join(BASE_DIR, 'static')
-
-
-
-[
-    {
-        "AllowedHeaders": [
-            "*"
-        ],
-        "AllowedMethods": [
-            "GET",
-            "PUT",
-            "POST",
-            "HEAD",
-            "DELETE"
-        ],
-        "AllowedOrigins": [
-            "*"
-        ],
-        "ExposeHeaders": [],
-        "MaxAgeSeconds": 3000
-    }
-]
-# <?xml version="1.0" encoding="UTF-8"?>
-# <CORSConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
-#   <CORSRule>
-#     <AllowedOrigin>*</AllowedOrigin>
-#     <AllowedMethod>HEAD</AllowedMethod>
-#     <AllowedMethod>GET</AllowedMethod>
-#     <AllowedMethod>PUT</AllowedMethod>
-#     <AllowedMethod>POST</AllowedMethod>
-#     <AllowedMethod>DELETE</AllowedMethod>
-#     <AllowedHeader>*</AllowedHeader>
-#   </CORSRule>
-# </CORSConfiguration>
-
 SESSION_COOKIE_SECURE = False
 CSRF_COOKIE_SECURE = True
 
